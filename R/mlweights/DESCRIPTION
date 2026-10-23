@@ -1,0 +1,23 @@
+Package: mlweights
+Type: Package
+Title: Scaling and Checking Survey Weights for Two-Level Models
+Version: 0.1.0
+Authors@R: c(
+    person("Yousef M.", "Nasher", email = "yousefnasher76@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-3704-3149")),
+    person("Marwan", "Alqumbaey", email = "marwanalqumbaey@gmail.com", role = "aut",
+           comment = c(ORCID = "0009-0004-8688-9556")))
+Description: Rescales within-cluster (level-1) survey weights, checks whether
+    they are scaled, splits a Demographic and Health Survey final weight into
+    cluster and within-cluster weights with the rescaling step included, and
+    gives a first-order approximation of how much unscaled level-1 weights
+    inflate the cluster variance of a random-intercept logistic model.
+URL: https://github.com/Yousef-Nasher/mlweights
+BugReports: https://github.com/Yousef-Nasher/mlweights/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: stats
+Suggests: testthat (>= 3.0.0), WeMix
+Config/testthat/edition: 3
+RoxygenNote: 7.3.1

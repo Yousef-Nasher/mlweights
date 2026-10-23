@@ -1,0 +1,19 @@
+# DHS microdata must not be shared
+*.dta
+*.DTA
+*.sav
+*.SAV
+*.zip
+*.ZIP
+data/
+dhsdata/
+# Python and R build files
+__pycache__/
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+*.Rcheck/
+*.tar.gz
+.Rhistory
+.RData
