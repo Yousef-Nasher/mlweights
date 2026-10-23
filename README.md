@@ -1,5 +1,7 @@
 # mlweights
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23601431.svg)](https://doi.org/10.5281/zenodo.23601431)
+
 Survey weights in two-level random-intercept models, with a focus on Demographic and Health Survey (DHS) data.
 
 In a weighted multilevel model the within-cluster (level-1) weight enters the likelihood as given. If it is not rescaled within clusters, each cluster looks larger than it is, and the model reads sampling noise as real differences between clusters. The cluster variance, the intraclass correlation (ICC) and the median odds ratio (MOR) all come out too large. `svy: melogit` in Stata has no option to rescale level-1 weights, so this has to be done by the user.
@@ -109,6 +111,8 @@ R CMD build R/mlweights && R CMD check mlweights_0.1.0.tar.gz
 If you use this code, please cite the paper and the software (see `CITATION.cff`):
 
 Nasher YM, Alqumbaey M. Unscaled within-cluster weights inflate cluster variance in multilevel logistic models of Demographic and Health Survey data: a reanalysis and simulation study. Manuscript submitted for publication, 2026.
+
+Nasher YM, Alqumbaey M. mlweights: scaling and checking survey weights for two-level models (version 0.1.0) [software]. Zenodo, 2026. https://doi.org/10.5281/zenodo.23601431
 
 ## Licence
 
